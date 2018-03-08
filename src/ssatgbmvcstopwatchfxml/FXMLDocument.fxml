@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ssatgbmvcstopwatchfxml.FXMLDocumentController">
+   <children>
+      <Label fx:id="digc" alignment="CENTER" layoutX="76.0" layoutY="326.0" prefHeight="137.0" prefWidth="418.0" text=" 00:00:00" textAlignment="CENTER">
+         <font>
+            <Font size="76.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="224.0" fitWidth="359.0" layoutX="182.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clockface.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hand" fitHeight="246.0" fitWidth="234.0" layoutX="177.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hand.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn1" layoutX="203.0" layoutY="295.0" mnemonicParsing="false" onAction="#handlebtn1" text="Start" />
+      <Button fx:id="btn2" layoutX="325.0" layoutY="295.0" mnemonicParsing="false" onAction="#handlebtn2" text="Lap" />
+   </children>
+</AnchorPane>
